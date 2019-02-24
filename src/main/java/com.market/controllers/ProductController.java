@@ -17,7 +17,7 @@ public class ProductController {
 
     @GetMapping("/products")
     public String outputProductPage(Model model){
-        return "home";
+        return "index";
     }
 
     @PostMapping("/products")
