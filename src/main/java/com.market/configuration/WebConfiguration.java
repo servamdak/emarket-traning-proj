@@ -16,8 +16,8 @@
 //import java.util.Map;
 //
 //@Configuration
-//@EnableWebMvc
-//@ComponentScan
+////@EnableWebMvc
+//@ComponentScan(basePackages = {"com.market.controllers"})
 //public class WebConfiguration implements WebMvcConfigurer {
 //
 ////    @Autowired
@@ -60,13 +60,13 @@
 ////        return urlBasedViewResolver;
 ////    }
 //
-//    //    @Bean
-////    public InternalResourceViewResolver resourceViewResolver(){
-////        InternalResourceViewResolver internalResourceViewResolver = new InternalResourceViewResolver();
-////        internalResourceViewResolver.setPrefix("/resources/");
-////        internalResourceViewResolver.setSuffix(".*");
-////        return internalResourceViewResolver;
-////    }
+//        @Bean
+//    public InternalResourceViewResolver resourceViewResolver(){
+//        InternalResourceViewResolver internalResourceViewResolver = new InternalResourceViewResolver();
+//        internalResourceViewResolver.setPrefix("/resources/static/");
+//        internalResourceViewResolver.setSuffix(".html");
+//        return internalResourceViewResolver;
+//    }
 ////
 ////    @Override
 ////    public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {

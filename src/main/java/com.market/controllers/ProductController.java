@@ -10,18 +10,18 @@ import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.List;
 
-@Controller
+@RestController
 public class ProductController {
 
     public List<String> products = Arrays.asList("Notebook", "Phone", "SmartTV", "Monitor", "Desktop", "SmartWatch", "Speaker");
 
-    @GetMapping("/products")
-    public String outputProductPage(Model model){
-        return "index";
-    }
+//    @GetMapping("/products")
+//    public String outputProductPage(){
+//        return outputAllProducts();
+//    }
 
-    @PostMapping("/products")
+    @GetMapping("/")
     public List<String> outputAllProducts(){
-        return products;
+        return Arrays.asList("Notebook", "Phone", "SmartTV", "Monitor", "Desktop", "SmartWatch", "Speaker");
     }
 }
