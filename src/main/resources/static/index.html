@@ -4,34 +4,7 @@
 		<meta charset="UTF-8">
 		<title>Emarket</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script type="text/javascript">
-            $(document).ready(function () {
-                $.ajax({
-                    url: 'market.com',
-                    contentType: 'application/json; charset=utf-8',
-//                    data: {},
-                    dataType: "json",
-                    success: [function (result) {
-                        $.each(result, function (i, val) {
-                            var tr = "<tr>" +
-                                "<td>" + (i + 1) + "</td>" +
-                                "<td>" + val[i] + "</td>" +
-                                "<td>" + val[i] + "</td>" +
-                                "<td>" + val[i] + "</td>" +
-                                "<td>" + val[i] + "</td>" +
-                                "<td>" + val[i] + "</td>" +
-                                "<td>" + val[i] + "</td>" +
-                                "<td>" + val[i] + "</td>" +
-                                "</tr>";
-                            $(tr).appendTo("tbody");
-                        });
-                    }],
-	                error: [function(){
-                        alert('Error!')
-	                }]
-                });
-            })
-		</script>
+		<script src="productOutput.js"></script>
 	</head>
 	<body>
 		<h1>Emarket - here is all what you need</h1>
@@ -41,7 +14,6 @@
 			
 			</tbody>
 		</table>
-	
-	
+		
 	</body>
 </html>
